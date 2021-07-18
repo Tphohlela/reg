@@ -14,41 +14,54 @@
 <body>
 
     <div>
-        <h1>
+        <p class="heading">
             Registration
-        </h1>
+        </p>
         <div class="error">
 
         </div>
+    
 
-        <h1>
+        <p class="subHeading">
             Registration Number : <textarea name="name" rows="2" cols="40" class="textBox"
-                onfocus="this.value=''" placeholder="  Please enter valid registration number ">  </textarea>
-        </h1>
-        <h5>
-            <button class="addBtn">
-                ADD
-            </button>
-        </h5>
+                onfocus="this.value=''" placeholder="Format:CA 123 456/CK 123 456/CJ 123 456 ">  </textarea>
+                <button class="addBtn" style="margin-left:30px;">
+                    ADD
+                </button>
+                
+        </p>
+
+
 
         
-        <p>Please select town:</p>
+        <p class="town">Please select town:</p>
         <input type="radio" id="english" name="langRadioBtn" value="CA" class="CA">
         <label for="English">Cape Town</label>
         <input type="radio" id="spanish" name="langRadioBtn" value="CJ" class="CJ">
         <label for="Spanish">Paarl</label>
         <input type="radio" id="french" name="langRadioBtn" value="CK" class="CK">
         <label for="French">Malmesbury</label>
+        <button class="addShowBtn" style="margin-left: 30px;">
+            SHOW
+        </button>
         
     </div>
+
+   
+
     <div>
 
-        <h5>
-            <button class="addShowBtn">
-                SHOW
-            </button>
-        </h5>
+       
         
+
+        <h4 style="margin-top: 80px;">
+            <button class="addView btn" style="margin: 40px;">
+                VIEW ALL
+            </button>
+            <button class="reset btn" style="margin-top: 30px;margin-bottom: 20px;">
+                RESET
+            </button>
+        </h4>
     </div>
 
 

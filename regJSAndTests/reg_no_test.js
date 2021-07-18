@@ -111,6 +111,7 @@ describe('registration function', function () {
 
                 assert.equal(null, reg1.regList("123123 GP"));
             });
+        });
 
             describe('registrations that have been displayed already', function () {
                 
@@ -213,6 +214,7 @@ describe('registration function', function () {
     
 
             });
+        });
 
             describe('filter', function () {
 
@@ -297,5 +299,4 @@ describe('registration function', function () {
           
         });
 
-    });
-});
+   

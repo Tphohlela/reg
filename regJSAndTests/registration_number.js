@@ -2,7 +2,6 @@ function registration() {
 
     var existingReg = {};
     var existingReg2 = {};
-    var newList = [];
     let h;
     var newArr = [];
     var newArr1 = [];

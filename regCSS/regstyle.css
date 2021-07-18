@@ -1,39 +1,96 @@
 span{
-    background-color: yellow;
-    border: black;
+    background-color: orange;
+    border: chocolate;
     border-radius: 10px;
     border-style: solid;
-    border-width: medium;
+    border-width:thick;
     padding: 10px;
     transform: translate(-50%, -50%);
     flex: auto;
     margin: 10px;
+    font-family: monospace;
+ 
 }
 
 .danger {
     color: crimson;
     font-weight: bold;
   }
-
-h1{
-    text-align: center;
-    font-family:monospace;
+.subHeading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color:chocolate;
 }
+.heading{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    color:chocolate;
+    border-bottom: 5px solid  orange ;
+    border-bottom-width: thin;
+    font-weight: bold;
+}
+
 h5{
    
     padding-left: 600px;
+    font-family:cursive;
 }
 
 body{
+
  text-align: center;   
+ width: 1000px;
+ height: 680px;
+ margin-inline: auto;
+ /* margin: auto; */
+ border: 8px solid #f3a042;
+ border-style: groove;
+ 
 }
 
 textarea{
     margin: -10px;
     margin-left: 10px;
     text-size-adjust: 10px;
+    border-color:orange;
+    outline: cornsilk;
 }
 
 .error{
     text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.town{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    color:chocolate;
+}
+label{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+    color:chocolate;
+
+}
+
+
+button{
+    background-color:chocolate;
+    border-color: cornsilk;
+    border-radius: 25px;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+    font-size: 16px;
+    outline: cornsilk;
+}
+
+.btn:hover{
+    cursor: pointer;
+    color: w;
+    box-shadow:cornsilk;
+    font-weight:bolder;
+    transform: scale(1.1) perspective(1px)
+
 }
