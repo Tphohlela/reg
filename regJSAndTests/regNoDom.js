@@ -6,7 +6,7 @@ var addShowBtnRef = document.querySelector(".addShowBtn");
 
 var myVar;
 var dataFromLocal;
-var newList =[];
+var newList = [];
 var existingReg = dataFromLocal || {};
 
 var regInstance = registration(dataFromLocal);
@@ -15,18 +15,15 @@ if (localStorage['reg']) {
 
     existingReg = JSON.parse(localStorage['reg']);
 
-         h = Object.keys(existingReg);
-         var newList = h.toString().split(':0,');
+    h = Object.keys(existingReg);
 
-    for (var i = 0; i < newList.length; i++) {
-        var anotherNewList1 = newList[i].trim();
+    h.forEach(function (element) {
 
         var regPlate = document.createElement("span");
+        regPlate.innerHTML = element;
         document.body.appendChild(regPlate);
-    }
 
-    existingReg = JSON.parse(localStorage['reg']);
-    regPlate.innerHTML = anotherNewList1;
+    });
 
 }
 
@@ -40,7 +37,7 @@ function myFunction() {
 function regNumber() {
     var regNo = textBoxRef.value;
 
-   localStorage.clear();
+    localStorage.clear();
 
     myFunction();
 
@@ -61,7 +58,7 @@ function regNumber() {
         existingReg[regNo] = 0;
 
         regPlate.innerHTML = regInstance.regList(regNo);
-       
+
         document.body.appendChild(regPlate);
 
         localStorage['reg'] = JSON.stringify(existingReg);
@@ -74,10 +71,10 @@ function regNumber() {
     }
 
     regNo.value = null;
-    
+
 }
 
-function showBtn(){
+function showBtn() {
 
     myFunction();
 
@@ -85,21 +82,21 @@ function showBtn(){
 
     var radio = document.querySelector("input[name='langRadioBtn']:checked");
 
-    if (!radio){
-        
+    if (!radio) {
+
         errorRef.classList.add('danger');
-        errorRef.innerHTML = "Please choose a town";  
+        errorRef.innerHTML = "Please choose a town";
     }
 
     // if (radioBtnEng) {
-       
+
     //     var langValue = radioBtnEng.value;
 
     //     radioBtnEng.checked = false;
     //     emptyStringRef.classList.add('danger');  
     //     emptyStringRef.innerHTML = greetingsInstance.errors(name,langValue);
 
-     
+
     //     helloPlusName.innerHTML = greetingsInstance.greetings1(name,langValue)
 
     //     localStorage['names'] = JSON.stringify(namesGreeted);
@@ -107,11 +104,11 @@ function showBtn(){
     //     counterRef.innerHTML = list;
     //     succesGreetingRef.classList.add('success')
     //     succesGreetingRef.innerHTML = greetingsInstance.successGreeting(name);
-        
+
     // }
     regPlate.innerHTML = regInstance.getArr(regNo);
-    
+
 }
 
 addBtnRef.addEventListener('click', regNumber);
-addShowBtnRef.addEventListener('click',showBtn);
+addShowBtnRef.addEventListener('click', showBtn);
