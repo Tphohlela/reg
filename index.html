@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RegNumber</title>
+
+    <link rel="stylesheet" href="regCSS/regstyle.css">
+</head>
+
+<body>
+
+    <div>
+        <h1>
+            Registration
+        </h1>
+        <div class="error">
+
+        </div>
+
+        <h1>
+            Registration Number : <textarea name="name" rows="2" cols="40" class="textBox"
+                onfocus="this.value=''" placeholder="  Please enter valid registration number ">  </textarea>
+        </h1>
+        <h5>
+            <button class="addBtn">
+                ADD
+            </button>
+        </h5>
+
+        
+        <p>Please select town:</p>
+        <input type="radio" id="english" name="langRadioBtn" value="CA" class="CA">
+        <label for="English">Cape Town</label>
+        <input type="radio" id="spanish" name="langRadioBtn" value="CJ" class="CJ">
+        <label for="Spanish">Paarl</label>
+        <input type="radio" id="french" name="langRadioBtn" value="CK" class="CK">
+        <label for="French">Malmesbury</label>
+        
+    </div>
+    <div>
+
+        <h5>
+            <button class="addShowBtn">
+                SHOW
+            </button>
+        </h5>
+        
+    </div>
+
+
+</body>
+
+<script src="regJSAndTests/registration_number.js" charset="utf-8"></script>
+<script src="regJSAndTests/regNoDom.js" charset="utf-8"></script>
+
+</html>
